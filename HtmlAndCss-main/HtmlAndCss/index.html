@@ -4,84 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Some Page title
-        <img href="C:\Users\songm\Pictures\earth-care.png" alt ="Earth care" style="width:60px;height:50px;"/>
-    </title>
+    <title>Butterflies</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/css-grid.css" rel="stylesheet">
 </head>
 <body>
-    <header> <h1>World Cities</h1></header>
-    <nav>
-        <ul>
-            <li><a href="www.google.com">Link1</a></li>
-            <li><a href="www.google.com">Link2</a></li>
-            <li><a href="www.google.com">Link3</a></li>
-            
-        </ul>
-        <a href="login.html">Login</a>
-    </nav>
-    <div>
-        <h2>HeadLine</h2>
-        <p>Some text about... something..</p>
-        <p>Some text about... something else, or more about same thing..</p>
+    <div class="grid-container">
+        <nav class="navbar" >
+            <h1 class="h1" id="siteName">Fjärilar</h1>
+            <ul class="menu-items">
+                <li><a href="https://www.filmochskola.se/Filmer/F/fjarilar---den-fantastiska-forvandlingen/">Lär mer</a></li>
+                <li><a href="https://www.nrm.se/faktaomnaturenochrymden/djur/insekterochspindeldjur/fjarilar.7076.html">Galleri</a></li>
+                <li><a href="https://www.learnaboutbutterflies.com/Species%20index.htm">Hjälp till</a></li>
+            </ul>
+            <a class="menu-login" href="login.html">Login</a>
+        </nav>
+        
+        <div class="main-content">
+            <h2 class="main-header">Fantastiska Fjärilar</h2>
+            <div class="main-text">
+                <img class="images" id="dragonTail-img" src="css/greenDragonTail.jpg" />
+                <p>Detta är en hyllning till alla fjärilar. Fjärilar är fantastiska insekter!! 
+                    Omvandlingsprocessen från ägg till larv, 
+                    till puppa och till sist att bli en vacker kreation - en fjäril! 
+                    En alltmer eftertraktad varelse för vår så viktiga pollinering, 
+                    men också så underbar att få betrakta i alla dess olika former.</p>
+                <p id="boldAndBlue">I världen finns det  ungefär 150 000 arter inom ordningen, 
+                    varav över 5 000 är förekommande i Europa och 2 900 i Sverige. 
+                    Vi behöver alla göra något för att hjälpa våra pollinerare,
+                däribland fjärilarna. Att hjälpa dem, gör vår värld vackrare </p>
+            </div>
+            <article class="article" id="article1">
+                <h3 class="article-header">Svenska fjärilar vaknar allt tidigare</h3>
+                <img class="images" id="peacockEye" src="css/pågågelöga.jpg" 
+                alt="bild på Påfågelöga" />
+                <p>Svenska dagfjärilar som övervintrar vaknar nu tidigare på våren jämfört med för 20 år sedan. Det kan leda till att färre fjärilar överlever.
 
-        <article>
-            <h3>Article headline</h3>
-            <img src="istockphoto-TheEarthInOurHand1024x1024.jpg" style="width: 500px;"/>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               Consectetur modi incidunt maxime harum, doloribus voluptates non repellendus ipsam aliquam officia, 
-                amet omnis aspernatur dignissimos, quo pariatur eveniet nesciunt ipsum dolorem!</p>
-            <p>Something more</p>
-            <p>Last text..</p>
-        </article>
-        <article>
-            <h3>Article headline 2</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-               Nulla, deserunt sunt rerum impedit excepturi fuga debitis? 
-               Aliquam velit sapiente temporibus, dolores accusantium vitae enim recusandae praesentium, 
-               reprehenderit culpa officiis dolore!</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Nulla, deserunt sunt rerum impedit excepturi fuga debitis? 
-                Aliquam velit sapiente temporibus, dolores accusantium vitae enim recusandae praesentium, 
-                reprehenderit culpa officiis dolore!</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Nulla, deserunt sunt rerum impedit excepturi fuga debitis? 
-                Aliquam velit sapiente temporibus, dolores accusantium vitae enim recusandae praesentium, 
-                reprehenderit culpa officiis dolore!</p>
-        </article>
+                    Dagfjärilar, som exempelvis citronfjäril, påfågelöga och nässelfjäril, 
+                    gömmer sig undan när vintern kommer för att sedan vakna på våren igen. 
+                    Men enligt studier vaknar nu dagfjärilarna i snitt en vecka tidigare jämfört med för 20 år sedan. 
+                    Anledningen kan vara den ökade temperaturen. Det rapporterar Sveriges radios vetenskapsredaktion. 
+                    </p>
+                <p>Enligt Bengt Karlsson, forskare på Zoologiska institutionen vid Stockholms universitet, 
+                    som ligger bakom studien, kan det här leda till att färre fjärilar överlever. 
+                    Det är nämligen inte säkert att de växter, som fjärilarnas larver äter, kommer fram lika tidigt.</p>
+                <p>Författad av Cathrine Beijer. Du kan också gå in på Sveriges Radio för att söka på artikeln.</p>
+            </article>
+            <article class="article" id="article2">
+                <h3 class="article-header">De tio vanligaste fjärilarna i Sverige</h3>
+                <ol><li>Citronfjärilen</li>
+                    <li>Tistelfjärilen</li>
+                    <li>Amiralfjärilen</li>
+                    <li>Nässelfjärilen</li>
+                    <li>Påfågelögat</li>
+                    <li>Kålfjärilen</li>
+                    <li>Aurorafjärilen</li>
+                    <li>Puktörneblåvingen</li>
+                    <li>Slåttergräsfjärilen</li>
+                    <li> Mindre guldvinge</li>
+                </ol>
+                <p>Läs mer om dem och se hur de ser ut under adressen:</p>
+                <p>https://illvet.se/djur/insekter/fjarilar</p>
+            </article>
+        </div>
         <div class="aside">
-            <h2>Headline, aside element</h2> 
+            <h2>Mina favoriter</h2> 
+            <p> Jag har valt att använda engelska namn på alla, 
+                då det inte finns svenska namn på alla arterna.</p>
             <ul>
                 <li>
-                    <h3>Brazil</h3>
+                    <h3>Amerika</h3>
                     <ol>
-                        <li>Rio de Janeiro - 6,4 miljoner </li>
-                        <li>Salvador - 2,9 miljoner</li>
-                        <li>Brasilia - 2,8 miljoner</li>
+                        <li>Eighty-eight butterfly  </li>
+                        <li>Blue Morpho</li>
+                        <li>Glasswinged butterfly</li>
                     </ol>
                 </li>
                 <li>
-                    <h3>Portugal</h3>
+                    <h3>Australien</h3>
                     <ol>
-                        <li>Lisbon - 545 000</li>
-                        <li>Sintra - 377 000</li>
-                        <li>Vila Nova de Gaia - 302 000</li>
+                        <li>Cairns Birdwing</li>
+                        <li>Blue Triangle</li>
+                        <li>Ulysses Swallowtail</li>
                     </ol>
                 </li>
                 <li>
-                    <h3>Sweden</h3>
+                    <h3>Asien</h3>
                     <ol>
-                        <li>Stockholm - 1,6 miljoner</li>
-                        <li>Göteborg - 607 000</li>
-                        <li>Malmö - 325 000</li>
+                        <li>The green Dragontail</li>
+                        <li>Birdwing butterfly</li>
+                        <li>Emerald Swallowtail</li>
                     </ol>
                 </li>
-                
+                <li>
+                    <h3>Europa</h3>
+                    <ol>
+                        <li>Monarch</li>
+                        <li>Bluewing</li>
+                        <li>Swallowtail butterfly</li>
+                    </ol>
+                </li>
             </ul>
         </div>
         <div class="footer">
             <span>&#169 2022 Maria Jakobsson</span>
-        </div>
-    </div>
-    
+        </div>    
+    </div>    
 </body>
 </html>

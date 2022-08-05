@@ -1,0 +1,110 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr,1fr, 1fr;
+    grid-template-rows: 1fr auto 40px;
+    grid-template-areas: "navbar navbar navbar"
+                         "main-content main-content aside"
+                         "footer footer footer";
+    gap:16px;
+}
+
+.navbar{
+    grid-area: navbar;
+    display:grid;
+    grid-template-areas: "site-name menu-items  ... Login";
+    gap:2em;
+    align-items: center;
+}
+#siteName{
+    grid-area: site-name;
+}
+.menu-items{
+    grid-area:menu-items;
+}
+.menu-login{
+    grid-area:Login;
+}
+
+.main-content{
+    grid-area: main-content;
+    gap:25px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0,4fr 3fr 5fr;
+    grid-template-areas: "main-header main-header "
+                          "main-text main-text"
+                          "article1 article2";
+}
+.main-header{
+    grid-area:main-header;
+   
+}
+.main-text{
+    grid-area:main-text;
+}
+#article1{
+    grid-area:article1;
+}
+#article2{
+    grid-area:article2;
+}
+
+.aside{
+    grid-area: aside;
+}
+.footer{
+    grid-area: footer;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+}
+
+/***************************************************   login page  ***************************************************** /
+/* /Navbar same as for index page/ */
+.login-page-wrap{
+    display:grid;
+    grid-template-columns: 1fr 1fr  1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas: "navbar navbar navbar"
+                         "login-form login-form login-form"
+                         "footer footer footer";
+                          
+}
+
+.login-form{
+    grid-area:login-form;
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 1fr  .5fr .5fr 1.5fr;
+    grid-template-areas: "login-header ... ..."
+                         "username-lbl username-input username-input"
+                         "password-lbl password-input password-input"
+                         "... reset-btn signIn-btn";
+    gap:16px;
+}
+#login-header{
+    grid-area:login-header;
+}
+ #username-lbl{
+    grid-area:username-lbl;
+}
+#uName-input{
+    grid-area:username-input;
+}
+#password-lbl{
+    grid-area:password-lbl;
+}
+#password-input{
+    grid-area:password-input;
+}
+#reset-btn{
+    grid-area:reset-btn;
+}
+#signIn-btn{
+    grid-area:signIn-btn;
+}
+
+
+

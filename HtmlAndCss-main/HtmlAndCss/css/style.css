@@ -1,0 +1,129 @@
+*{
+    font-family: sans-serif;
+}
+
+html, body{
+    margin:0;
+    padding:0;
+}
+html{
+    /* height: 100%; */
+    background-color: #fff;
+}
+
+body{
+    background-color: rgb(143, 188, 143);
+    /* height: 100%;
+    width:100%; */
+    max-width: 1024px;
+    margin:0 auto;
+    padding:0;
+}
+
+.navbar, .footer{
+    background-color: beige;
+}
+.navbar{
+    position:sticky;
+    top:0;
+    border:solid hsl(214, 50%, 80%);
+    font-size: 1,7rem;
+}
+.footer{
+    border: solid 1px;
+    height:30px;
+    text-align:center;
+    padding: 1.4em 0 1em 0;
+}
+.navbar ul{
+    display:flex;
+    list-style:none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar  a{
+    text-decoration: none;
+    color: hsl(0,0%,0%);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.navbar  a:hover{
+    background-color: hsl(120, 24%, 66%);
+}
+    
+.menu-items, .menu-login{
+    justify-content: center;
+}
+
+.menu-login{
+    text-decoration: none;
+    text-align: center;
+}
+.menu-login:hover{
+    background-color: hsl(120, 24%, 66%);
+}
+.h1{
+    justify-content: center;
+    text-align: center;
+}
+.main-content, .aside{
+    /* border: solid hsl(214, 50%, 80%); */
+    margin: 1.5em;
+}
+.main-header{
+    margin:0;
+}
+.images{
+    width:150px;
+}
+#dragonTail-img{
+    width: 200px;
+}
+
+#boldAndBlue{
+    font-weight: bold;
+    color:blue;
+}
+.aside{
+    margin:2rem;
+}
+.aside >ul>li{
+    color:green;
+}
+.aside >ul>li:nth-child(even){
+    color:red;
+}
+/* **********************************              Login        ************************************* */
+.login-form{
+    text-align: center;
+    display: grid;
+  padding: 1em;
+  background: #f9f9f9;
+  border: 1px solid #c1c1c1;
+  margin: 2rem auto 2rem auto;
+  max-width: 700px;
+  padding: 1em;
+}
+.login-form label{
+    padding: 0.5em 0.5em 0.5em 0;
+}
+#reset-btn{
+    background-color: hsl(0, 2%, 90%);
+    border:0;
+    border-radius:8px;
+}
+#reset-btn:hover{
+    background-color: hsl(0, 3%, 66%);
+   
+}
+#signIn-btn{
+    background-color: hsl(120, 48%, 80%);
+    border:0;
+    border-radius:8px;
+}
+#signIn-btn:hover{
+    background-color: hsl(120, 24%, 66%);
+}
+

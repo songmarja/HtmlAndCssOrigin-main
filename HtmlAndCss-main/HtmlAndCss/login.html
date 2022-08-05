@@ -5,33 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/css-grid.css" rel="stylesheet">
 </head>
 <body>
-    <header> <h1>World Cities</h1></header>
-    <nav>
-        <ul>
-            <li><a href="www.google.com">Link1</a></li>
-            <li><a href="www.google.com">Link2</a></li>
-            <li><a href="www.google.com">Link3</a></li>
-            
-        </ul>
-        <a href="index.html">Home</a>
-    </nav>
-    <div>
-        <h2>User login</h2>
-        <form>
-            <label for="username">User name</label>
-            <input type="text">
-            <label for="password">Password</label>
-            <input type="text">
-            <input type="reset" value="Reset">
-            <input type="submit" value="Sign in" > 
+    <div class="login-page-Wrap">
+        <nav class="navbar" >
+            <h1 class="h1" id="siteName">Fjärilar</h1>
+            <ul class="menu-items">
+                <li><a href="https://www.filmochskola.se/Filmer/F/fjarilar---den-fantastiska-forvandlingen/">Lär mer</a></li>
+                <li><a href="https://www.nrm.se/faktaomnaturenochrymden/djur/insekterochspindeldjur/fjarilar.7076.html">Galleri</a></li>
+                <li><a href="https://www.learnaboutbutterflies.com/Species%20index.htm">Hjälp till</a></li>
+            </ul>
+            <a class="menu-login" href="index.html">Hem</a>
+        </nav>
+        <form class="login-form">
+            <h2 class="main-header" id="login-header">User login</h2>
+            <label  id="username-lbl" for="username">User name</label>
+            <input id="uName-input" type="text" placeholder="Username">
+            <label id="password-lbl" for="password">Password</label>
+            <input id="password-input" type="text" placeholder="Password">
+            <input id="reset-btn" type="reset" value="Reset">
+            <input id="signIn-btn" type="submit" value="Sign in" > 
         </form>
-
-       
-        
+        <div class="footer">
+            <span>&#169 2022 Maria Jakobsson</span>
+        </div>
     </div>
-    
 </body>
 </html> 
 </body>
